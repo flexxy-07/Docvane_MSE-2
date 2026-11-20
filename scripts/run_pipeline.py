@@ -13,6 +13,7 @@ from src.data.validation import validate_dataset
 from src.models.evaluate import evaluate_saved_model
 from src.models.train import train_and_track
 from src.monitoring.drift import run_drift_check
+from src.models.retrain import run_retraining_workflow
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("DocVane-Pipeline")
@@ -48,6 +49,17 @@ def run_full_pipeline():
     logger.info("========== STEP 6: MONITORING & DRIFT ANALYSIS ==========")
     drift_res = run_drift_check()
     logger.info(f"Drift check completed. PSI Score: {drift_res.get('psi_score')}")
+
+    logger.info("========== STEP 7: NEW-DATA QUALITY GATE & RETRAINING ==========")
+    quality_decision = run_retraining_workflow(
+        incoming_path=PROJECT_ROOT / "data" / "incoming" / "new_batch.csv",
+        promote=False,
+    )
+    logger.info(
+        "Candidate eligible: %s | Action: %s",
+        quality_decision["eligible_for_promotion"],
+        quality_decision["promotion_action"],
+    )
 
     logger.info("=============================================================")
     logger.info("🎉 SUCCESS! Full DocVane MLOps pipeline executed successfully.")

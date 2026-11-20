@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-11-20T05:50:25.108338+00:00",
+  "incoming_batch": "/workspaces/Docvane_MSE-2/data/incoming/new_batch.csv",
+  "validation": {
+    "valid": true,
+    "rows": 32,
+    "columns": [
+      "record_id",
+      "document_text",
+      "label"
+    ],
+    "null_counts": {
+      "record_id": 0,
+      "document_text": 0,
+      "label": 0
+    },
+    "duplicate_record_ids": 0,
+    "duplicate_records": 0,
+    "target_distribution": {
+      "invoice": 8,
+      "resume": 8,
+      "certificate": 8,
+      "bank_statement": 8
+    }
+  },
+  "champion_metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "macro_f1": 1.0
+  },
+  "champion_classification_report": {
+    "bank_statement": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "certificate": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "invoice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "resume": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 32.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 32.0
+    }
+  },
+  "candidate_metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "macro_f1": 1.0
+  },
+  "candidate_classification_report": {
+    "bank_statement": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "certificate": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "invoice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "resume": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 32.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 32.0
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-11-20T05:50:30.681113+00:00",
+  "incoming_batch": "/workspaces/Docvane_MSE-2/data/incoming/new_batch.csv",
+  "validation": {
+    "valid": true,
+    "rows": 32,
+    "columns": [
+      "record_id",
+      "document_text",
+      "label"
+    ],
+    "null_counts": {
+      "record_id": 0,
+      "document_text": 0,
+      "label": 0
+    },
+    "duplicate_record_ids": 0,
+    "duplicate_records": 0,
+    "target_distribution": {
+      "invoice": 8,
+      "resume": 8,
+      "certificate": 8,
+      "bank_statement": 8
+    }
+  },
+  "existing_training_rows": 160,
+  "combined_training_rows": 192,
+  "quality_metric": "macro_f1",
+  "minimum_macro_f1": 0.8,
+  "champion": {
+    "model_path": "/workspaces/Docvane_MSE-2/artifacts/model.joblib",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "macro_f1": 1.0
+    }
+  },
+  "candidate": {
+    "model_path": "/workspaces/Docvane_MSE-2/artifacts/candidate_model.joblib",
+    "vectorizer_path": "/workspaces/Docvane_MSE-2/artifacts/candidate_vectorizer.joblib",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "macro_f1": 1.0
+    }
+  },
+  "candidate_minus_champion_macro_f1": 0.0,
+  "eligible_for_promotion": true,
+  "promotion_action": "retained_champion",
+  "explicit_promotion_requested": false,
+  "mlflow_run_id": "7edc2ebe6a7745289d930bbbe8d04395"
+}

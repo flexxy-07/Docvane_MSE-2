@@ -78,3 +78,30 @@ def test_evaluate_threshold():
     metrics = evaluate_saved_model()
     assert metrics["threshold_met"] is True
     assert metrics["macro_f1"] >= 0.80
+
+
+def test_retraining_workflow_creates_candidate_and_decision(tmp_path):
+    """Verify the incoming batch workflow creates a candidate and quality report."""
+    from scripts.generate_incoming_batch import generate_incoming_batch
+    from src.models.retrain import run_retraining_workflow
+
+    incoming = generate_incoming_batch(tmp_path / "incoming.csv", samples_per_class=2)
+    candidate_model = tmp_path / "candidate_model.joblib"
+    candidate_vectorizer = tmp_path / "candidate_vectorizer.joblib"
+    decision_report = tmp_path / "quality_gate.json"
+
+    decision = run_retraining_workflow(
+        incoming_path=incoming,
+        candidate_model_path=candidate_model,
+        candidate_vectorizer_path=candidate_vectorizer,
+        report_path=decision_report,
+        promote=False,
+    )
+
+    assert candidate_model.exists()
+    assert candidate_vectorizer.exists()
+    assert decision_report.exists()
+    assert "champion" in decision
+    assert "candidate" in decision
+    assert decision["quality_metric"] == "macro_f1"
+    assert isinstance(decision["eligible_for_promotion"], bool)

@@ -44,6 +44,12 @@ monitoring:
   drift_report_path: "reports/drift_report.json"
   psi_threshold: 0.2
   low_confidence_threshold: 0.65
+  incoming_batch_path: "data/incoming/new_batch.csv"
+  quality_gate_report_path: "reports/quality_gate_decision.json"
+  quality_gate:
+    quality_metric: "macro_f1"
+    minimum_macro_f1: 0.80
+    require_candidate_improvement: false
 
 ocr:
   fallback_enabled: true

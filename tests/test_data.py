@@ -10,6 +10,7 @@ from src.data.extraction import (
     extract_text_from_txt,
 )
 from src.data.validation import validate_dataset
+from src.models.retrain import validate_incoming_batch
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -44,6 +45,50 @@ def test_validate_dataset_missing_category(tmp_path):
     df.to_csv(invalid_csv, index=False)
     with pytest.raises(ValueError, match="missing required document categories"):
         validate_dataset(invalid_csv)
+
+
+def test_validate_incoming_batch_success(tmp_path):
+    incoming_csv = tmp_path / "incoming.csv"
+    pd.DataFrame({
+        "record_id": [f"row-{index}" for index in range(4)],
+        "document_text": ["invoice text", "resume text", "certificate text", "bank text"],
+        "label": ["invoice", "resume", "certificate", "bank_statement"],
+    }).to_csv(incoming_csv, index=False)
+
+    summary = validate_incoming_batch(incoming_csv)
+    assert summary["valid"] is True
+    assert summary["rows"] == 4
+    assert summary["duplicate_record_ids"] == 0
+    assert summary["duplicate_records"] == 0
+    assert set(summary["target_distribution"]) == {
+        "invoice",
+        "resume",
+        "certificate",
+        "bank_statement",
+    }
+
+
+def test_validate_incoming_batch_missing_column(tmp_path):
+    incoming_csv = tmp_path / "incoming.csv"
+    pd.DataFrame({
+        "document_text": ["invoice text"],
+        "label": ["invoice"],
+    }).to_csv(incoming_csv, index=False)
+
+    with pytest.raises(ValueError, match="Missing required columns"):
+        validate_incoming_batch(incoming_csv)
+
+
+def test_validate_incoming_batch_duplicate_id(tmp_path):
+    incoming_csv = tmp_path / "incoming.csv"
+    pd.DataFrame({
+        "record_id": ["duplicate", "duplicate"],
+        "document_text": ["first invoice", "second resume"],
+        "label": ["invoice", "resume"],
+    }).to_csv(incoming_csv, index=False)
+
+    with pytest.raises(ValueError, match="duplicate record IDs"):
+        validate_incoming_batch(incoming_csv)
 
 
 def test_extract_text_from_txt(tmp_path):

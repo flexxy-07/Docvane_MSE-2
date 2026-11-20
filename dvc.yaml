@@ -38,3 +38,22 @@ stages:
     plots:
       - reports/confusion_matrix.png:
           cache: false
+
+  monitor_retrain:
+    cmd: python scripts/run_model_monitoring.py --skip-generation
+    deps:
+      - scripts/run_model_monitoring.py
+      - scripts/generate_incoming_batch.py
+      - src/models/retrain.py
+      - src/features/preprocessing.py
+      - data/incoming/new_batch.csv
+      - data/processed/dataset.csv
+      - artifacts/model.joblib
+      - artifacts/vectorizer.joblib
+      - params.yaml
+    outs:
+      - artifacts/candidate_model.joblib
+      - artifacts/candidate_vectorizer.joblib
+    metrics:
+      - reports/quality_gate_decision.json:
+          cache: false

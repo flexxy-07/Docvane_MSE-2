@@ -1,0 +1,249 @@
+record_id,document_text,label
+INV-NEW-001,"NEW INVOICE
+Vendor: Northstar Analytics
+Invoice Number: INV-NEW-001
+Billing Date: 20/11/2026
+Customer: Olivia Brown
+Cloud infrastructure and engineering services
+Subtotal: $1075.00
+Tax: $107.00
+Total Amount Due: $1182.00",invoice
+RES-NEW-001,"Priya Shah
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-001",resume
+CERT-NEW-001,"CERTIFICATE OF COMPLETION
+Presented to: Noah Williams
+Successfully completed: Cloud MLOps
+Issued by: Tech Council
+Certificate ID: CERT-NEW-001
+Issue Date: 20/11/2026",certificate
+BANK-NEW-001,"NATIONAL BANK STATEMENT
+Account Holder: Ethan Wilson
+Account Number: 2026NEW000001
+Statement Period: November 2026
+Opening Balance: $5100.00
+Credits: $825.00
+Debits: $315.00
+Closing Balance: $5610.00
+Reference: BANK-NEW-001",bank_statement
+INV-NEW-002,"NEW INVOICE
+Vendor: Vertex Research
+Invoice Number: INV-NEW-002
+Billing Date: 20/11/2026
+Customer: Ethan Wilson
+Cloud infrastructure and engineering services
+Subtotal: $1150.00
+Tax: $114.00
+Total Amount Due: $1264.00",invoice
+RES-NEW-002,"Ethan Wilson
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-002",resume
+CERT-NEW-002,"CERTIFICATE OF COMPLETION
+Presented to: Noah Williams
+Successfully completed: Production ML Systems
+Issued by: Tech Council
+Certificate ID: CERT-NEW-002
+Issue Date: 20/11/2026",certificate
+BANK-NEW-002,"NATIONAL BANK STATEMENT
+Account Holder: Priya Shah
+Account Number: 2026NEW000002
+Statement Period: November 2026
+Opening Balance: $5200.00
+Credits: $850.00
+Debits: $330.00
+Closing Balance: $5720.00
+Reference: BANK-NEW-002",bank_statement
+INV-NEW-003,"NEW INVOICE
+Vendor: Northstar Analytics
+Invoice Number: INV-NEW-003
+Billing Date: 20/11/2026
+Customer: Olivia Brown
+Cloud infrastructure and engineering services
+Subtotal: $1225.00
+Tax: $121.00
+Total Amount Due: $1346.00",invoice
+RES-NEW-003,"Priya Shah
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-003",resume
+CERT-NEW-003,"CERTIFICATE OF COMPLETION
+Presented to: Ethan Wilson
+Successfully completed: Production ML Systems
+Issued by: Tech Council
+Certificate ID: CERT-NEW-003
+Issue Date: 20/11/2026",certificate
+BANK-NEW-003,"NATIONAL BANK STATEMENT
+Account Holder: Ethan Wilson
+Account Number: 2026NEW000003
+Statement Period: November 2026
+Opening Balance: $5300.00
+Credits: $875.00
+Debits: $345.00
+Closing Balance: $5830.00
+Reference: BANK-NEW-003",bank_statement
+INV-NEW-004,"NEW INVOICE
+Vendor: Vertex Research
+Invoice Number: INV-NEW-004
+Billing Date: 20/11/2026
+Customer: Olivia Brown
+Cloud infrastructure and engineering services
+Subtotal: $1300.00
+Tax: $128.00
+Total Amount Due: $1428.00",invoice
+RES-NEW-004,"Noah Williams
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-004",resume
+CERT-NEW-004,"CERTIFICATE OF COMPLETION
+Presented to: Ethan Wilson
+Successfully completed: Advanced NLP Engineering
+Issued by: Applied AI Academy
+Certificate ID: CERT-NEW-004
+Issue Date: 20/11/2026",certificate
+BANK-NEW-004,"NATIONAL BANK STATEMENT
+Account Holder: Olivia Brown
+Account Number: 2026NEW000004
+Statement Period: November 2026
+Opening Balance: $5400.00
+Credits: $900.00
+Debits: $360.00
+Closing Balance: $5940.00
+Reference: BANK-NEW-004",bank_statement
+INV-NEW-005,"NEW INVOICE
+Vendor: Orbit Cloud Systems
+Invoice Number: INV-NEW-005
+Billing Date: 20/11/2026
+Customer: Priya Shah
+Cloud infrastructure and engineering services
+Subtotal: $1375.00
+Tax: $135.00
+Total Amount Due: $1510.00",invoice
+RES-NEW-005,"Olivia Brown
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-005",resume
+CERT-NEW-005,"CERTIFICATE OF COMPLETION
+Presented to: Priya Shah
+Successfully completed: Cloud MLOps
+Issued by: Tech Council
+Certificate ID: CERT-NEW-005
+Issue Date: 20/11/2026",certificate
+BANK-NEW-005,"NATIONAL BANK STATEMENT
+Account Holder: Olivia Brown
+Account Number: 2026NEW000005
+Statement Period: November 2026
+Opening Balance: $5500.00
+Credits: $925.00
+Debits: $375.00
+Closing Balance: $6050.00
+Reference: BANK-NEW-005",bank_statement
+INV-NEW-006,"NEW INVOICE
+Vendor: Orbit Cloud Systems
+Invoice Number: INV-NEW-006
+Billing Date: 20/11/2026
+Customer: Ethan Wilson
+Cloud infrastructure and engineering services
+Subtotal: $1450.00
+Tax: $142.00
+Total Amount Due: $1592.00",invoice
+RES-NEW-006,"Noah Williams
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-006",resume
+CERT-NEW-006,"CERTIFICATE OF COMPLETION
+Presented to: Olivia Brown
+Successfully completed: Production ML Systems
+Issued by: Tech Council
+Certificate ID: CERT-NEW-006
+Issue Date: 20/11/2026",certificate
+BANK-NEW-006,"NATIONAL BANK STATEMENT
+Account Holder: Olivia Brown
+Account Number: 2026NEW000006
+Statement Period: November 2026
+Opening Balance: $5600.00
+Credits: $950.00
+Debits: $390.00
+Closing Balance: $6160.00
+Reference: BANK-NEW-006",bank_statement
+INV-NEW-007,"NEW INVOICE
+Vendor: Orbit Cloud Systems
+Invoice Number: INV-NEW-007
+Billing Date: 20/11/2026
+Customer: Ethan Wilson
+Cloud infrastructure and engineering services
+Subtotal: $1525.00
+Tax: $149.00
+Total Amount Due: $1674.00",invoice
+RES-NEW-007,"Ethan Wilson
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-007",resume
+CERT-NEW-007,"CERTIFICATE OF COMPLETION
+Presented to: Priya Shah
+Successfully completed: Advanced NLP Engineering
+Issued by: Tech Council
+Certificate ID: CERT-NEW-007
+Issue Date: 20/11/2026",certificate
+BANK-NEW-007,"NATIONAL BANK STATEMENT
+Account Holder: Ethan Wilson
+Account Number: 2026NEW000007
+Statement Period: November 2026
+Opening Balance: $5700.00
+Credits: $975.00
+Debits: $405.00
+Closing Balance: $6270.00
+Reference: BANK-NEW-007",bank_statement
+INV-NEW-008,"NEW INVOICE
+Vendor: Northstar Analytics
+Invoice Number: INV-NEW-008
+Billing Date: 20/11/2026
+Customer: Ethan Wilson
+Cloud infrastructure and engineering services
+Subtotal: $1600.00
+Tax: $156.00
+Total Amount Due: $1756.00",invoice
+RES-NEW-008,"Ethan Wilson
+NEW CURRICULUM VITAE
+Professional Summary: Machine learning engineer and MLOps specialist.
+Technical Skills: Python, Scikit-Learn, MLflow, Docker, FastAPI, Kubernetes.
+Experience: Built document classification and model monitoring pipelines.
+Education: Degree in Computer Science.
+Resume Reference: RES-NEW-008",resume
+CERT-NEW-008,"CERTIFICATE OF COMPLETION
+Presented to: Ethan Wilson
+Successfully completed: Cloud MLOps
+Issued by: Applied AI Academy
+Certificate ID: CERT-NEW-008
+Issue Date: 20/11/2026",certificate
+BANK-NEW-008,"NATIONAL BANK STATEMENT
+Account Holder: Ethan Wilson
+Account Number: 2026NEW000008
+Statement Period: November 2026
+Opening Balance: $5800.00
+Credits: $1000.00
+Debits: $420.00
+Closing Balance: $6380.00
+Reference: BANK-NEW-008",bank_statement
